@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+<style>
+    table,th,td{
+        border: 1px solid black;
+    }
+    * {
+  box-sizing: border-box;
+}
+.row {
+  display: flex;
+}
+
+.column {
+  padding: 5px;
+}
+</style>
+<body>
+    <div class="row">
+        <div class="column"></div>
+    <table border="1" width="300" height="300" cellspacing="">
+        <td>
+            <strong>reteta de clatite</strong>
+        </td>
+    </table>
+    <table border="1" width="300" height="300" cellspacing="">
+        <td>
+            <img src="images/clatite.png" alt="clatite">
+        </td>
+    </table>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="column"></div>
+<table border="1" width="300" height="300" cellspacing="">
+    <td>
+        <strong>ingrediente</strong>
+       <ul>
+           <li>350 faina</li>
+           <li>3 oua</li>
+           <li>50g unt topit</li>
+           <li>500ml lapte rece</li>
+           <li>250ml apa minerala</li>
+           <li>un praf de sare</li>
+           <li>optional:vanilie, coaja de lamaie</li>
+           <li>ulei pentru prajit</li>
+       </ul>
+    </td>
+</table>
+<table border="1" width="300" height="300" cellspacing="">
+    <td>
+        1. <strong>Timp de preparare</strong> 10 minute
+        <br>
+        2. <strong>Timp de gatire</strong> 2 minute
+        <br>
+        3. <strong>Timp total</strong> 12 minute
+    </td>
+</table>
+</div>
+</div>
+
+
+<div class="row">
+    <div class="column"></div>
+<table border="1" width="300" height="300" cellspacing="">
+    <td>
+       <form action="formular.php" method="post">
+           <strong>Formular</strong>
+           <br>
+           <br>
+           Numele tau <input type="text" placeholder="Numele tau">
+           adresa de email <input type="text" placeholder="emailul tau">
+           varsta <select name="" id="">
+               <option value="">15-25 ani</option>
+           </select>
+           <br>
+           <br>
+
+           <input type="reset" value="reset">
+       <button type="submit">submit</button>
+
+       </form>
+    </td>
+</table>
+<table border="1" width="300" height="300" cellspacing="">
+    <td>
+        <strong>masini preferate</strong>
+        <br>
+        <label for="bmw">bmw</label>
+        <input type="radio" id="bmw" name="car" value="numele-tau">
+        <br>
+        <label for="audi">audi</label>
+        <input type="radio" id="audi" name="car">
+        <br>
+        <label for="volvo">volvo</label>
+        <input type="radio" id="volvo" name="car">
+        <br>
+        <label for="mercedes">mercedes</label>
+        <input type="radio" id="mercedes" name="car">
+        <br>
+        <br>
+        <input type="reset" value="reset">
+    </td>
+</table>
+</div>
+</div>
+
+
+       
+</body>
+</html>
