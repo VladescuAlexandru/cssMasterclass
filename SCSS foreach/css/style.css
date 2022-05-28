@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Source+Sans+Pro:wght@200;400;600&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background: pink;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.color {
+  display: flex; }
+  .color-item {
+    width: 128px;
+    height: 256px;
+    background: lime;
+    margin-right: 40px;
+    background: #eceff1;
+    border-radius: 8px;
+    position: relative; }
+    .color-item:last-child {
+      margin-right: 0; }
+    .color-item:before {
+      background: #151515;
+      position: absolute;
+      height: 64px;
+      content: "hex";
+      width: 100%;
+      bottom: 0;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0 0 8px 8px;
+      letter-spacing: 0.44px; }
+    .color-item:nth-child(1) {
+      background: #eceff1; }
+      .color-item:nth-child(1):before {
+        content: "#eceff1"; }
+    .color-item:nth-child(2) {
+      background: #cfd8dc; }
+      .color-item:nth-child(2):before {
+        content: "#cfd8dc"; }
+    .color-item:nth-child(3) {
+      background: #b0bec5; }
+      .color-item:nth-child(3):before {
+        content: "#b0bec5"; }
+    .color-item:nth-child(4) {
+      background: #90a4ae; }
+      .color-item:nth-child(4):before {
+        content: "#90a4ae"; }
+    .color-item:nth-child(5) {
+      background: #78909c; }
+      .color-item:nth-child(5):before {
+        content: "#78909c"; }
+    .color-item:nth-child(6) {
+      background: #607d8b; }
+      .color-item:nth-child(6):before {
+        content: "#607d8b"; }
+
+/*# sourceMappingURL=style.css.map */
