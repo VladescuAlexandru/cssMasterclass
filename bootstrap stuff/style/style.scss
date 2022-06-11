@@ -1,0 +1,76 @@
+//import google fonts/icons
+//variables declaration
+//mixins declaration
+
+@mixin onMobile{
+    @media (max-width:700px){
+        @content;
+    }
+}
+
+@mixin mixin_Name(){
+    background: red;
+    border: 1px sold black;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+@mixin hideonDesktop(){
+        display: none;
+}
+
+
+//rest of css
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    @include onMobile(){
+        background: black;
+    }
+}
+
+
+.red{
+   background: deeppink;
+   @include mixin_Name;
+   @include onMobile(){
+       background: red;
+   }
+}
+
+.green{
+    background: lightgreen;
+}
+
+.blue{
+    background: deepskyblue;
+}
+
+
+.navbar-nav{
+    .nav-item{
+        a{
+            background: greyred;
+            color: black;
+            &.active{
+                background: red;
+                color: white;
+            }
+        }
+    }
+}
+
+
+
+.icons{
+    width: 300px;
+    height: 200px;
+    border: 1px solid red;
+    margin-left: 100px;
+    padding: 50px;
+}
+
+
